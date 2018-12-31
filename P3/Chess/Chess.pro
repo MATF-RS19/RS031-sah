@@ -32,7 +32,9 @@ SOURCES += \
 HEADERS += \
         chess.h \
     figura.h \
-    boja.h
+    boja.h \
+    stanje.h \
+    oznaka.h
 
 FORMS += \
         chess.ui

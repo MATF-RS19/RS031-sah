@@ -5,7 +5,7 @@ Figura::Figura(){}
 
 Pijun::Pijun(const QBoja& b){
     boja=b;
-    oznaka="pijun";
+    oznaka=QOznaka::pijun;
     if(b==QBoja::bela){
         slicica=":/Slike/beli_pijun.png";
     }
@@ -16,7 +16,7 @@ Pijun::Pijun(const QBoja& b){
 
 Top::Top(const QBoja& b){
     boja=b;
-    oznaka="top";
+    oznaka=QOznaka::top;
     if(b==QBoja::bela){
         slicica=":/Slike/beli_top.png";
     }
@@ -27,7 +27,7 @@ Top::Top(const QBoja& b){
 
 Konj::Konj(const QBoja& b){
     boja=b;
-    oznaka="konj";
+    oznaka=QOznaka::konj;
     if(b==QBoja::bela){
         slicica=":/Slike/beli_konj.png";
     }
@@ -38,7 +38,7 @@ Konj::Konj(const QBoja& b){
 
 Lovac::Lovac(const QBoja& b){
     boja=b;
-    oznaka="lovac";
+    oznaka=QOznaka::lovac;
     if(b==QBoja::bela){
         slicica=":/Slike/beli_lovac.png";
     }
@@ -49,7 +49,7 @@ Lovac::Lovac(const QBoja& b){
 
 Kraljica::Kraljica(const QBoja& b){
     boja=b;
-    oznaka="kraljica";
+    oznaka=QOznaka::kraljica;
     if(b==QBoja::bela){
         slicica=":/Slike/bela_kraljica.png";
     }
@@ -60,7 +60,7 @@ Kraljica::Kraljica(const QBoja& b){
 
 Kralj::Kralj(const QBoja& b){
     boja=b;
-    oznaka="kralj";
+    oznaka=QOznaka::kralj;
     if(b==QBoja::bela){
         slicica=":/Slike/beli_kralj.png";
     }
@@ -77,22 +77,22 @@ QString Lovac::Slicica() const{return slicica;}
 QString Kraljica::Slicica() const{return slicica;}
 QString Kralj::Slicica() const{return slicica;}
 
-QString Pijun::Oznaka()const{
+QOznaka Pijun::Oznaka()const{
     return oznaka;
 }
-QString Top::Oznaka()const{
+QOznaka Top::Oznaka()const{
     return oznaka;
 }
-QString Konj::Oznaka()const{
+QOznaka Konj::Oznaka()const{
     return oznaka;
 }
-QString Lovac::Oznaka()const{
+QOznaka Lovac::Oznaka()const{
     return oznaka;
 }
-QString Kraljica::Oznaka()const{
+QOznaka Kraljica::Oznaka()const{
     return oznaka;
 }
-QString Kralj::Oznaka()const{
+QOznaka Kralj::Oznaka()const{
     return oznaka;
 }
 

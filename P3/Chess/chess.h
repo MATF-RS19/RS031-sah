@@ -5,7 +5,8 @@
 #include "figura.h"
 #include <QLabel>
 #include <QMap>
-#include <QScopedPointer>
+#include <QPushButton>
+#include "stanje.h"
 
 namespace Ui {
 class Chess;
@@ -90,18 +91,33 @@ private slots:
 private:
     Ui::Chess *ui;
 
-    QMap<QLabel*,Figura*> mapa;
+    QMap<int,Figura*> mapa;
     Pijun *p0,*p1;
     Top *t0,*t1;
     Konj *k0,*k1;
     Lovac *l0,*l1;
     Kraljica *y0,*y1;
     Kralj *x0,*x1;
+    QStanje stanje;
+    int pKlik;
+    bool* polja;
+    int brojPoteza;
+
 
     void inicijalizujTablu();
+    int labelToInt(QLabel*)const;
+    QLabel* intToLabel(int)const;
+    QPushButton* intToButton(int)const;
+    void potez(int);
+    void crtaj(Figura*, QLabel*);
+    void figuraNapadaPolja(int,bool*);
+    bool figuraNapadaPolja(int);
+    void allButtonsDisable();
+    void changeButtons(int);
+    void setPolja();
+    void Polja();
+    void priprema();
 };
 
-void crtaj(Figura*, QLabel*);
-void brisi(QLabel*);
 
 #endif // CHESS_H

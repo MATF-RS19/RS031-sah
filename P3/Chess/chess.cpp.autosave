@@ -890,8 +890,7 @@ void Chess::potez(int u){
             ++brojPoteza;
 
             allButtonsDisable();
-            priprema();
-            allButtonsDisable();
+ //           priprema();
         }
         else{
             Polja();
