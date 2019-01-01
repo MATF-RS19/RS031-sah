@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Slike/bela_kraljica.png</file>
+        <file>Slike/beli_konj.png</file>
+        <file>Slike/beli_kralj.png</file>
+        <file>Slike/beli_lovac.png</file>
+        <file>Slike/beli_pijun.png</file>
+        <file>Slike/beli_top.png</file>
+        <file>Slike/crna_kraljica.png</file>
+        <file>Slike/crni_konj.png</file>
+        <file>Slike/crni_kralj.png</file>
+        <file>Slike/crni_lovac.png</file>
+        <file>Slike/crni_pijun.png</file>
+        <file>Slike/crni_top.png</file>
+        <file>Slike/tabla.jpg</file>
+    </qresource>
+</RCC>
